@@ -29,6 +29,7 @@ Changes:
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
     <ReleaseVersion>4.0.0.2</ReleaseVersion>
+    <AndroidCodegenTarget>XamarinAndroid</AndroidCodegenTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
