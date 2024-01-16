@@ -57,7 +57,9 @@ Changes:
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
-    <Reference Include="Mono.Android" />
+    <Reference Include="Mono.Android">
+      <Private>False</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -89,6 +91,8 @@ Changes:
   <ItemGroup>
     <None Include="LICENSE.txt" Pack="true" PackagePath="" />
   </ItemGroup>
+  <!--
+  -->
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
   <ItemGroup>
     <ProjectReference Include="..\YandexMetrica.Xamarin.PCL\YandexMetrica.Xamarin.PCL.csproj">
@@ -97,16 +101,11 @@ Changes:
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="NuGet.Build.Packaging">
-      <Version>0.2.2</Version>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-      <PrivateAssets>all</PrivateAssets>
-    </PackageReference>
     <PackageReference Include="Xamarin.Google.Android.InstallReferrer">
-      <Version>1.0.0</Version>
+      <Version>1.0.0.8</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.GooglePlayServices.AppSet">
-      <Version>16.0.2.2</Version>
+      <Version>16.0.2.8</Version>
     </PackageReference>
   </ItemGroup>
 </Project>
